@@ -11,13 +11,13 @@ const PromptInput = () => {
         <textarea
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          className="flex-1 p-4 outline-none rounded-md"
+          className="flex-1 p-2 h-10 outline-none rounded-md"
           placeholder="Enter a prompt..."
         />
-        <button type="submit" disabled={!input}>
+        <button type="submit" disabled={!input} className="border-t">
           Generate
         </button>
-        <button
+        {/* <button
           className="p-4 bg-violet-400 text-white transition-colors duration-200 font-bold disabled:text-gray-300 disabled:cursor-not-allowed disabled:bg-gray-400"
           type="button"
         >
@@ -28,7 +28,7 @@ const PromptInput = () => {
           type="button"
         >
           New Suggestion
-        </button>
+        </button> */}
       </form>
     </div>
   );
