@@ -1,6 +1,6 @@
 "use client";
 
-import fetchSuggestionsFromChatGPT from "@/lib/FetchSuggestionFromChatGPT";
+import fetchSuggestionsFromChatGPT from "@/lib/fetchSuggestionFromChatGPT";
 import { useState } from "react";
 import useSWR from "swr";
 
