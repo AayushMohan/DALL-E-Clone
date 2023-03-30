@@ -1,6 +1,7 @@
 "use client";
 
 import fetchSuggestionsFromChatGPT from "@/lib/fetchSuggestionFromChatGPT";
+import loading from "@nextui-org/react/types/loading";
 import { useState } from "react";
 import useSWR from "swr";
 
@@ -44,8 +45,8 @@ const PromptInput = () => {
 
       {input && (
         <div className="italic pt-2 pl-2 font-light">
-          <p className="text-gray-500">Suggestion</p>
-          <p className="text-gray-800">{suggestion}</p>
+          <p className="text-gray-500">Suggestion: </p>
+          <span>{loading ? "ChatGPT is Thinking" : suggestion}</span>
         </div>
       )}
     </div>
