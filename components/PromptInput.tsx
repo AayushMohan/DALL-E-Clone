@@ -41,6 +41,13 @@ const PromptInput = () => {
           New Suggestion
         </button>
       </form>
+
+      {input && (
+        <div className="italic pt-2 pl-2 font-light">
+          <p className="text-gray-500">Suggestion</p>
+          <p className="text-gray-800">{suggestion}</p>
+        </div>
+      )}
     </div>
   );
 };
