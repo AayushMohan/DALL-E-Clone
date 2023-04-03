@@ -1,3 +1,4 @@
+import DropdownMenu from "./DropdownMenu";
 import Image from "next/image";
 
 const Header = () => {
@@ -10,8 +11,9 @@ const Header = () => {
         height={20}
         className="flex space-x-2 items-center cursor-pointer"
       />
-      <div className="font-semibold cursor-pointer">
+      <div className="font-semibold cursor-pointer flex items-center hover:bg-gray-100 hover:p-2 rounded-lg">
         <h2>DALL•E</h2>
+        <DropdownMenu />
       </div>
       <Image
         src="https://avatars.githubusercontent.com/u/66319691?v=4"
