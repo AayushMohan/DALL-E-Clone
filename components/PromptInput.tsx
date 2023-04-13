@@ -17,7 +17,7 @@ const PromptInput = () => {
         <button type="submit" disabled={!input} className="border-t">
           Generate
         </button>
-        {/* <button
+        <button
           className="p-4 bg-violet-400 text-white transition-colors duration-200 font-bold disabled:text-gray-300 disabled:cursor-not-allowed disabled:bg-gray-400"
           type="button"
         >
@@ -28,10 +28,9 @@ const PromptInput = () => {
           type="button"
         >
           New Suggestion
-        </button> */}
+        </button>
       </form>
     </div>
   );
 };
-
 export default PromptInput;
